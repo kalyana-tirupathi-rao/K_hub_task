@@ -1,0 +1,124 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #af88af;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #34495e;
+  margin-bottom: 30px;
+}
+
+h2 {
+  color: #2c3e50;
+  border-bottom: 2px solid #e67e22;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.add-note {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+input[type="text"], textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #dcdcdc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+button {
+  background-color: #e67e22;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #d35400;
+  transform: scale(1.05);
+}
+
+.note-list {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.note-item {
+  background-color: #ecf0f1;
+  border-radius: 4px;
+  padding: 15px;
+  margin-bottom: 15px;
+  transition: box-shadow 0.3s ease;
+}
+
+.note-item:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.note-item h3 {
+  margin-top: 0;
+  color: #2c3e50;
+}
+
+.note-item p {
+  color: #7f8c8d;
+  margin-bottom: 15px;
+}
+
+.note-item button {
+  margin-right: 10px;
+}
+
+.note-item button:last-child {
+  background-color: #e74c3c;
+}
+
+.note-item button:last-child:hover {
+  background-color: #c0392b;
+  transform: scale(1.05);
+}
+
+.message {
+  background-color: #3498db;
+  color: white;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .container {
+      padding: 10px;
+  }
+
+  .add-note, .note-list {
+      padding: 15px;
+  }
+}
